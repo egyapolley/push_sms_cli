@@ -140,7 +140,7 @@ const pushSMS=async function (msisdn,smsId, contact,smsType, data) {
 
     let subscriberNumber = `0${msisdn.substring(3)}`;
     try {
-        const url = "http://localhost:5100";
+        const url = "http://172.25.33.141:5100";
         const sampleHeaders = {
             'User-Agent': 'NodeApp',
             'Content-Type': 'text/xml;charset=UTF-8',
