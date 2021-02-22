@@ -23,7 +23,6 @@ sequelize.sync({logging:false})
         await controller.processNearlyExpired_Exhausted();
         await controller.processExpired();
         await controller.processExpired_Exhausted();
-
     }catch (error){
         console.log(error);
 

@@ -451,11 +451,6 @@ module.exports = {
 
             }
 
-            expired_Exhausted =[{
-                msisdn:"233255000102",
-                dateExpired:"20210218142430"
-            }]
-
             for (const expiredExhaustedEl of expired_Exhausted) {
                 let {msisdn, dateExpired} = expiredExhaustedEl;
                 if (!await checkForRecharge(msisdn)) {
