@@ -232,7 +232,7 @@ module.exports = {
                         if (contact) {
                             let usedValue =(50.000-currentBalance).toFixed(3);
                             if (usedValue < 45){
-                                await pushSMS(msisdn, "2008", contact, "SMS-1", expiryDate)
+                                //await pushSMS(msisdn, "2008", contact, "SMS-1", expiryDate)
                             }else {
                                 await pushSMS(msisdn, "2001", contact, "SMS-2",usedValue)
                             }
